@@ -100,4 +100,8 @@ a {
     .mobileheader {
         display: block;
     }
+
+    .content {
+        width: 95%;
+    }
 }
