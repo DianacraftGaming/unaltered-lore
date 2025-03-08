@@ -19,7 +19,7 @@ body {
     gap: 0px;
     justify-content: center;  /* Horizontally centers */
     align-items: center;      /* Vertically centers */
-    height: 75%;
+    /*height: 75%;*/
 } 
 .mobileheader {
     min-height:10%;
@@ -62,9 +62,25 @@ body {
 	margin: 20px auto;
 }
 
+.note {
+    border-width: 5px;
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* Horizontally centers */
+    align-items: center;      /* Vertically centers */
+}
+
 h1 {
     font-size: 40px;
     margin-top: 10px;
+}
+
+h2 {
+    margin: 0;
+    float: left;
 }
 
 p.buttontext {
