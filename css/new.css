@@ -81,6 +81,28 @@ h4 {
   width: 100%;
 }
 
+.stub {
+  margin: 0 auto 30px;
+  text-decoration: none;
+  border: 2px outset #848AA2;
+  border-radius: 0 10px 0 10px;
+  background-color: #FAF9F2;
+  min-height: 150px;
+  max-height: fit-content;
+  flex-wrap: wrap;
+  display: flex;
+  padding: 25px;
+  max-width: 500px
+}
+.stub img {
+  margin: 0 30px 0 0;
+  height: 100px;
+  width: 100px;
+}
+.stub p {
+  max-width: 300px;
+}
+
 .imagehere {
   height: 150px;
   width: 150px;
