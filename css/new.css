@@ -1,13 +1,18 @@
 /* This thing is largely bashed together from SadGrl's layout template (at https://sadgrl.online/projects/layout-builder/) and https://www.w3schools.com/ and some StackOverflow threads */ 
+@font-face{
+  font-family: CambriaMath;
+  src: url("../fonts/cambria-math.ttf");
+}
+
 html{
   height: 100%;
+  font-family: CambriaMath;
 }
 
 body {
-  font-family: 'IBM Plex Sans',sans-serif;
   margin: 0;
-  background-color: #000000;
-  color: #000000;
+  color: #384251;
+  background-image: url("../images/white.png");
   height: 100%;
 }
 
@@ -21,13 +26,13 @@ body {
 }
 
 a {
-  color: #0066cc;
+  color: #848AA2;
   font-weight: normal;
   text-decoration:none;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a {
-  color: #000000;
+  color: #384251;
   text-decoration:none;
 }
 
@@ -40,21 +45,28 @@ a:hover {
   width: 100%;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-color: #d4d4d4;
+  background-color: transparent;
   background-position: 230px 0;
   height: 200px;
 }
 
+footer {
+  background-image: url("../images/background.png");
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  text-align: center;
+}
+
 main {
-  background-color: #fff;
   padding: 20px 20px 20px 80px;
   text-align: justify;
-  min-height:calc(100% - 240px)
+  min-height:calc(100% - 240px);
 }
 
 h1, h2 {
   text-align: left;
-  border-bottom: 1px black solid;
+  border-bottom: 2px outset #848AA2;
   width: 100%;
 }
 
@@ -86,24 +98,27 @@ h4 {
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center;
-  border: 1px black solid;
+  border: 2px outset #848AA2;
+  border-radius: 0 10px 0 0;
+  border-bottom: none;
 }
 
 .galleryimage {
-float: left;
-width: 170px;
-height: 170px;
-background-repeat: no-repeat;
-background-size: auto 100%;
-background-position: center;
-margin: 10px;
-border: 1px black solid;
+  float: left;
+  width: 170px;
+  height: 170px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  margin: 10px;
+  border: 2px outset #848AA2;
+  border-radius: 0 10px 0 10px;
 }
 
 h1,
 h2,
 h3 {
-  color: #000000;
+  color: #384251
 }
 
 h1 {
@@ -123,7 +138,8 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 
 .box {
   background-color: #E7E9EB;
-  border: 1px solid #000000;
+  border: 2px outset #848AA2;
+  border-radius: 0 10px 0 10px;
   padding: 10px;
 }
 
@@ -139,8 +155,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   width: 200px;
   margin-right:auto;
   margin: 0px 40px 10px 0px;
-  background-color: #E7E9EB;
-  border: 1px solid #000000;
+  background-color:#FAF9F2;
+  border: 2px outset #848AA2;
+  border-radius: 0 10px 0 10px;
 }
 
 ol {
@@ -157,7 +174,7 @@ float: right;
 width: 300px;
 margin-left:auto;
 margin: 0px 0px 30px 30px;
-background-color: #E7E9EB;
+background-color: #FAF9F2;
 }
 
 /* Clear floats after the columns */
@@ -169,11 +186,11 @@ clear: both;
 
 
 table {
-border-collapse: collapse;
-width: 300px;
-background-color: #E7E9EB;
-border-top: 1px solid black;
-border-bottom: 1px solid black;
+  border-collapse: collapse;
+  width: 300px;
+  background-color: #FAF9F2;
+  border: 2px outset #848AA2;
+  border-radius: 0 10px 0 10px;
 }
 
 tbody {
@@ -183,8 +200,9 @@ margin: 3px 10px;
 td, th {
 text-align: left;
 padding: 3px 10px;
-border-right: 1px solid black;
-border-left: 1px solid black;
+border-right: 2px outset #848AA2;
+border-left: 2px outset #848AA2;
+border-radius: 0 10px 0 10px;
 }
 
 td:nth-child(odd) {
@@ -193,8 +211,45 @@ font-weight: 600;
 }
 
 tr:nth-child(odd) {
-background-color: #e0e2e4;
+background-color: #EDE2EA;
 }
+
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 230px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #EDE2EA;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  border-bottom: none;
+  border-right: 2px outset #848AA2;
+}
+
+.sidenav a {
+  padding: 7px 0px 7px 20px;
+  margin: 0px 40px 5px 30px;
+  text-decoration: none;
+  display: block;
+  border: 2px outset #848AA2;
+  border-radius: 0 10px 0 10px;
+  background-color: #FAF9F2;
+}
+
+  .sidenav p {
+  padding: 0px 20px;
+  text-decoration: none;
+    }
+
+  .sidenav h2 {
+  margin-top: 0px;
+  padding: 0px 40px 0px 40px;
+  text-decoration: none;
+  text-align: justify;
+  border-bottom: 0px;
+    }
 
 
 /* MEDIA QUERY */
@@ -216,7 +271,56 @@ background-color: #e0e2e4;
   footer {
     display: none;
   }
-}
+  .sidenav {
+    min-height: 40px;
+    max-height: fit-content;
+    width: 100%; /* Set the width of the sidebar */
+    position: static;
+    z-index: 1; /* Stay on top */
+    display: flex;
+    flex-wrap: wrap;
+    scrollbar-width: none;
+    top: 0; /* Stay at the top */
+    left: 0;
+    padding-top: 0;
+    background-image: url("../images/background.png");
+    white-space: nowrap;
+    align-content: center;
+    border-bottom: 2px outset #848AA2;
+    border-right: none;
+      }
+  
+    .sidenav a {
+    padding: 3px 10px;
+    margin: 0px;
+    text-decoration: none;
+    display: inline;
+    border: 0px;
+    background-color: transparent;
+    color: #384251;
+      }
+  
+  .sidenav .imagehere {
+    display: none;
+              }
+  
+  .sidenav br {
+    display: none;
+              }
+  
+  .sidenav p {
+    display: none;
+              }
+  
+  .sidenav h2 {
+    display: none;
+              }
+  
+  .sidenav hr {
+    display: none;
+              }
+  
+} 
 
 @media only screen and (max-width: 1100px) {
 table, .characterprofile {
