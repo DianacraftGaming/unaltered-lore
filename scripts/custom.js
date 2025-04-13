@@ -46,7 +46,7 @@ class Stub extends HTMLElement{
   }
 
   connectedCallback(){
-    this.innerHTML = `<div class="stub"><div><img src="images/stub.png" alt=""></div><div><p><strong>This page/section is a stub.</strong></p><p>I'm doing my best to fill it in as quick as I can, please bear with me.</p></div></div>`
+    this.innerHTML = `<div class="stub"><div><img src="https://www.independentmediators.co.uk/wp-content/uploads/2016/02/placeholder-image-768x576.jpg" alt=""></div><div><p><strong>This page/section is a stub.</strong></p><p>I'm doing my best to fill it in as quick as I can, please bear with me.</p></div></div>`
   }
 }
 customElements.define("div-stub", Stub)
@@ -57,7 +57,7 @@ class ChaosStub extends HTMLElement{
   }
 
   connectedCallback(){
-    this.innerHTML = `<div class="stub"><div><img src="images/chaos.png" alt=""></div><div><p><strong>This page/section is under the control of Chaos.</strong></p><p>This part of lore belongs to my friend and is more likely to be outdated or miss details.</p></div></div>`
+    this.innerHTML = `<div class="stub"><div><img src="https://www.independentmediators.co.uk/wp-content/uploads/2016/02/placeholder-image-768x576.jpg" alt=""></div><div><p><strong>This page/section is under the control of Chaos.</strong></p><p>This part of lore belongs to my friend and is more likely to be outdated or miss details.</p></div></div>`
   }
 }
 customElements.define("div-chaos", ChaosStub)
