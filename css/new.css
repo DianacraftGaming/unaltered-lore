@@ -37,7 +37,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a {
 }
 
 a:hover {
-  color: #75b3f1;
+  color: #EB79EB;
 }
 
 
@@ -107,9 +107,12 @@ h4 {
   max-width: 300px;
 }
 
-p.caption {
-  padding-top: 65%;
-  font-size: 25px;
+.gallery a {
+  display: flex;
+  flex-direction: column;
+}
+p.caption{
+  margin: 0 auto;
 }
 
 .imagehere {
@@ -123,7 +126,7 @@ p.caption {
 }
 
 .charactermain-image {
-  height: 350px;
+  height: 450px;
   width: 300px;
   margin-left:auto;
   background-repeat: no-repeat;
@@ -178,7 +181,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
 .gallery {
   background-color: none;
   padding: 10px;
-  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 #toc {
@@ -377,4 +382,8 @@ main {
   margin: 0px 0px 10px 00px;
 }
 
+#toc {
+  width: 100%;
+  margin: 0px 0px 10px 00px;
+}
 }
