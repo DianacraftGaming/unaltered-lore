@@ -46,7 +46,7 @@ class Stub extends HTMLElement{
   }
 
   connectedCallback(){
-    this.innerHTML = `<div class="stub"><div><img src="https://www.independentmediators.co.uk/wp-content/uploads/2016/02/placeholder-image-768x576.jpg" alt=""></div><div><p><strong>This page/section is a stub.</strong></p><p>I'm doing my best to fill it in as quick as I can, please bear with me.</p></div></div>`
+    this.innerHTML = `<div class="stub"><div><img src="images/stub.png" alt=""></div><div><p><strong>This page/section is a stub.</strong></p><p>I'm doing my best to fill it in as quick as I can, please bear with me.</p></div></div>`
   }
 }
 customElements.define("div-stub", Stub)

@@ -239,13 +239,12 @@ text-align: left;
 padding: 3px 10px;
 border-right: 2px outset #848AA2;
 border-left: 2px outset #848AA2;
-border-radius: 0 10px 0 10px;
 }
 
 td:nth-child(odd) {
 font-weight: 600;
   text-align: right;
-width: 35%;
+ width: 35%;
 }
 
 tr:nth-child(odd) {
@@ -364,7 +363,7 @@ background-color: #EDE2EA;
 table, .characterprofile {
   float: left;
   width: 100%;
-  margin: 10px 0px 0px 00px;
+  margin: 0
 }
   
 .characterprofile {
@@ -379,11 +378,11 @@ main {
   
 .charactermain-image {
   width: 100%;
-  margin: 0px 0px 10px 00px;
+  margin: 0
 }
 
 #toc {
   width: 100%;
-  margin: 0px 0px 10px 00px;
+  margin: 0
 }
 }
