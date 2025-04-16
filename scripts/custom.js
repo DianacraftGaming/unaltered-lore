@@ -34,7 +34,7 @@ class Footer extends HTMLElement {
   connectedCallback(){
     console.log("added footer");
     this.innerHTML = `
-      <footer><strong>Website last updated 12.04.2025</strong></footer>
+      <footer><strong>Website last updated 15.04.2025</strong></footer>
       `;
   }
 }
@@ -57,7 +57,18 @@ class ChaosStub extends HTMLElement{
   }
 
   connectedCallback(){
-    this.innerHTML = `<div class="stub"><div><img src="https://www.independentmediators.co.uk/wp-content/uploads/2016/02/placeholder-image-768x576.jpg" alt=""></div><div><p><strong>This page/section is under the control of Chaos.</strong></p><p>This part of lore belongs to my friend and is more likely to be outdated or miss details.</p></div></div>`
+    this.innerHTML = `<div class="stub"><div><img src="images/chaos.png" alt=""></div><div><p><strong>This page/section is under the control of Chaos.</strong></p><p>This part of lore belongs to my friend and is more likely to be outdated or miss details.</p></div></div>`
   }
 }
 customElements.define("div-chaos", ChaosStub)
+
+class RoleplayStub extends HTMLElement{
+  constructor(){
+    super();
+  }
+
+  connectedCallback(){
+    this.innerHTML = `<div class="stub"><div><img src="https://www.independentmediators.co.uk/wp-content/uploads/2016/02/placeholder-image-768x576.jpg" alt=""></div><div><p><strong>This section has arguable canonicity.</strong></p><p>Characters or events mentioned here are from a sequel roleplay and I'm not sure if I want it to be canon</p></div></div>`
+  }
+}
+customElements.define("div-rp", RoleplayStub)
