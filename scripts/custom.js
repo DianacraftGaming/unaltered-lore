@@ -34,7 +34,7 @@ class Footer extends HTMLElement {
   connectedCallback(){
     console.log("added footer");
     this.innerHTML = `
-      <footer><strong>Website last updated 15.04.2025</strong></footer>
+      <footer><strong>Website last updated 28.06.2025</strong></footer>
       `;
   }
 }

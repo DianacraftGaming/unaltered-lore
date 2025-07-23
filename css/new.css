@@ -184,6 +184,7 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-self: center;
 }
 
 #toc {
@@ -387,6 +388,7 @@ main {
 
 #toc {
   width: 100%;
-  margin: 0
+  margin: 0;
+  margin-bottom: 20px;
 }
 }

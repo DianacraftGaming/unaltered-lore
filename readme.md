@@ -5,4 +5,4 @@ The website is WIP! most links are deadlinks, I am working on getting everything
 ### Website is available [here](https://dianacraftgaming.github.io/unaltered-lore/)
 [Neocities redirect](https://dianacraft.neocities.org) || [Nekoweb redirect](https://dianacraft.nekoweb.org)
 
-Last updated 13.04.2025
+Last updated 28.06.2025
